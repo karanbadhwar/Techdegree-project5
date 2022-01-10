@@ -106,11 +106,17 @@ function checkWin (){
    
 }
 function clearGame(){
-        console.log('Hello');
-        const list = ul.children;
-        for (let i = 0; i < lis.length; i++){
-           ul.removeChild(list[i]);   
-        }
+        // console.log('Hello');
+        //  const list = ul.children;
+        //  for (let i = 0; i < lis.length; i++){
+        //      if (lis[i].className === ''){
+        //         ul.removeChild(list[i]); 
+        //      }
+        //     // console.log(list[i]);
+        //    ul.removeChild(list[i]);   
+        //  }
+         ul.textContent = '';
+        
         addPhraseToDisplay(getRandomPhraseAsArray(phrases));
 
         const chosenButton = document.querySelectorAll('.chosen');
