@@ -116,7 +116,7 @@ function clearGame(){
         //    ul.removeChild(list[i]);   
         //  }
          ul.textContent = '';
-        
+        missed = 0;
         addPhraseToDisplay(getRandomPhraseAsArray(phrases));
 
         const chosenButton = document.querySelectorAll('.chosen');
